@@ -1,3 +1,4 @@
-export default function Algorithm() {
+export default function Algorithm(): React.JSX.Element {
   return <div>Algorithm!!!</div>;
 }
+
