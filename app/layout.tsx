@@ -16,20 +16,23 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className='w-screen flex'>
-        <div className='max-w-[200px] min-h-screen pt-10 pl-5 pr-5 border-r'>
+        <div className='w-[230px] min-h-screen pt-10 border-r'>
           <div className='flex flex-col items-center'>
             <Image
               src={Eomji}
               alt='profile img'
               className='w-[150px] rounded-full'
             />
-            <span className='mt-2'>Eomji</span>
+            <span className='mt-3 font-semibold'>Eomji</span>
           </div>
-          <ul className='flex flex-col gap-2 mt-5 pl-3 pr-3'>
-            <li>
+          <ul className='flex flex-col gap-2 mt-5 w-[150px] mr-auto ml-auto'>
+            <li className='p-1'>
+              <Link href='/'>All</Link>
+            </li>
+            <li className='p-1'>
               <Link href='/cs'>CS</Link>
             </li>
-            <li>
+            <li className='p-1'>
               <Link href='/algorithm'>Algorithm</Link>
             </li>
           </ul>
